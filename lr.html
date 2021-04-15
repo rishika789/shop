@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatiable" content="ie=edge">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css" />
+    <title>e-commerce</title>
+ </head>
+ <body>
+
+    <div class="discount">
+        <br>
+        <span>Login/Register<br><br></span>
+        
+    </div><br>
+
+
+    <div class="lr">
+        <div class="container">
+            <div class="row">
+                
+
+                <div class="col2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">LOGIN</span>
+                            <span onclick="register()">REGISTER</span>
+                            <hr id="indicator">
+                        </div>
+
+                        <form id="lform" onsubmit="return ll()" name="lr-googlesheet">
+                            <input type="text" placeholder="Name">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+
+
+                        <form id="rform">
+                            <input type="text" id="name" name="Name" placeholder="Name">
+                            <input type="email" id="email" name="Email" placeholder="Email">
+                            <input type="password" id="password" name="Password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                            
+                        </form>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var lform = document.getElementById("lform")
+        var rform = document.getElementById("rform")
+        var indicator = document.getElementById("indicator")
+
+              function register(){
+                  rform.style.transform = "translateX(0px)"
+                  lform.style.transform = "translateX(0px)"
+                  indicator.style.transform = "translateX(100px)"
+
+              }
+
+              function login(){
+                  rform.style.transform = "translateX(300px)"
+                  lform.style.transform = "translateX(300px)"
+                  indicator.style.transform = "translateX(0px)"
+
+
+
+
+              }
+
+
+         
+         
+    </script>
+
+    <script type="text/javascript">
+            function ll(){
+                var username = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var password = document.getElementById('password').value;
+
+
+            }
+    </script>
+
+    <script>
+         const scriptURL = 'https://script.google.com/macros/s/AKfycbwGiE6O5J8n7cA0xgXUSrJtO-DBipPzcxlcGXuiXjee_XxID25rMBJE_kcrDyJ4BRy3/exec'
+            const form = document.forms['lr-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("registered..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+    </script>

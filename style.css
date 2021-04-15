@@ -1,0 +1,759 @@
+:root{
+    --white:#fff;
+    --black:#222;
+    --primary:purple;
+    --grey:#888;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,800&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 65%;
+
+}
+body{
+    font-family: "Poppins" , sans-serif;
+    font-size: 1.8rem;
+    color: var(--black);
+    background-color: var(--white);
+
+
+}
+
+ul,
+li{
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+
+}
+@media only screen and (max-width: 1110px){
+    .container{
+        padding: 0 3rem;
+    }
+}
+
+.discount{
+    background-color: purple;
+    text-align: center;
+    color: var(--white);
+    padding: .5rem 0;
+    font-size: 50px;
+    font-family: Snell Roundhand, cursive;
+
+}
+
+discount.span{
+    margin-top: 0;
+    /*top: 50px;*/
+    bottom: 50px;
+    font-family: Snell Roundhand, cursive;
+}
+
+.ham{
+    display: none;
+}
+
+.menu.top{
+    display: none;
+
+}
+
+.d-flex{
+    display: flex; /*if none then website word wont be visible*/
+    align-items: center;
+}
+
+.navigation{
+    height: 1.9rem;
+    justify-content: space-between;
+
+}
+
+.logo{
+    margin: 0 0 0 12rem;
+    /* used because website word was in extreme left and top 50px left 45px etc didnt work*/
+    outline: 2px solid purple;
+    padding: 0 1.5rem;
+    outline-offset: 0.5rem;
+    /*border: 1px solid black;*/
+
+    
+}
+
+.items:not(:last-child){
+    margin-right: 0.6rem;
+}
+
+.links{
+    padding: 0 2rem;
+    transform: all 300ms ease-in-out;
+    text-decoration: none;
+}
+
+.items.links:nth-child(1){
+
+}
+
+.links:hover{
+    color: blue;
+
+}
+
+.nav .icon div{
+    font-size: 3rem;
+    padding: 0.6rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    position: relative;
+    display: inline block;
+    float: left;/*for making icons in single row or else they occur in a vertical line*/
+}
+
+.nav .icon div:last-child{
+    position: relative;
+
+}
+
+.nav .icon div span{
+    position: absolute;
+    top: -0.5rem;
+    right: -1.2rem;
+    font-size: 1rem;
+    font-weight: 550;
+    color: var(--white);
+    background-color:purple;
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%;
+
+
+
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 760px)
+
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero {
+    height: calc(100vh - 7rem);
+    background-color: beige;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.hero-content {
+    height: 100%;
+
+}
+
+.hero-content .left{
+    margin-top: -5rem;
+}
+
+.hero-content .left{
+    margin-top: -5rem;
+}
+
+.hero-content .left .subtitle{
+    display: inline block;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content .left .title{
+    line-height: 1.4;
+    font-family: 600;
+    font-size: 4rem;
+    text-align: left;
+}
+
+.hero-content .left .color{
+    color: purple;
+
+}
+
+.hero-content .left h5{
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    /*border-radius: 5rem;*/
+    background-color: var(--primary);
+    padding: 1.3rem 5rem;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
+    margin: 3rem 3rem 3rem 0;
+    text-decoration: none;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.hero-content .right img{
+    position: absolute;
+    right: 100px;/*right se space*/
+    top: 100px;/*upar se space*/
+    height: 70%;/*image size ka length*/
+}
+
+
+@media only screen and (max-width: 996px){
+    .discount{
+        font-size: 1.5rem;
+
+    }
+
+    .hero-content .left .title {
+        font-size: 3rem;
+    }
+
+    .btn {
+        padding: 1.2rem 4rem;
+    }
+
+    .hero-content .right img{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .hero {
+        height: calc(80vh - 7rem);
+
+    }
+
+    .hero-content left {
+        margin-top: -35rem;
+
+    }
+}
+
+@media only screen and (max-width: 567px){
+    .hero {
+        height: calc(100vh - 7rem);
+
+    }
+
+    .hero-content left {
+        margin-top: -20rem;
+
+    }
+
+    .hero-content .left .title{
+        margin-bottom: 1rem;
+    }
+
+    .hero-content .left h5 {
+        margin-top: 0.5rem;
+    }
+
+    .hero-content .right img{
+        width: 100%;
+        height: 35rem;
+        right: -20%;
+
+    }
+
+}
+ 
+
+
+
+
+.section {
+    padding: 10rem 0 0 0;
+}
+
+.service-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 10rem;
+    /* because it was not starting from left*/
+}
+
+.service{
+    border: 1px solid black ;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;/*displays contents one below the other*/
+}
+
+.service .icons {
+    color: purple;
+    font-size: 3.5rem;
+}
+
+
+
+
+
+.heading{
+    text-align: center;
+    font-family: 600;
+    padding: 50px;
+    font-size: 50px;
+
+}
+
+/*not changed colour of latest arrival its black*/
+
+.product-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+.product{
+    text-align: center;
+    padding-bottom: 1rem;
+    transition: all 500ms ease-in-out;
+}
+
+.product .images{
+    overflow: hidden;
+
+}
+
+.product .img{
+    transition: all 500ms ease-in-out;
+}
+
+.product:hover img{
+    transform: scale(1.2);
+}
+.b{
+    display: inline-block;
+    border-radius: 8rem;
+    background-color: black;
+    padding: 1.3rem 5rem;
+    color: white;
+    
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
+    margin: 3rem 3rem 3rem 0;
+    text-decoration: none;
+}
+
+.b:hover{
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 567px) {
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+
+
+.cat{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+    background-color: black;
+    gap: 5rem;
+}
+
+.cat img{
+    height: 100%;
+    width: 100%;
+    transition: all 500ms ease-in-out;
+}
+
+.cat img:hover{
+    transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 600px){
+
+
+
+
+}
+
+ 
+
+
+
+
+
+
+
+
+.footer{
+    background-color: black;
+    padding: 6rem 1.5rem;
+    line-height: 2rem;/*vertical heght of footer back part*/
+    margin-top: 5rem;
+    
+
+}
+
+.footer-center {
+    text-decoration: none;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: white;
+    
+}
+
+.footer-center a:link,
+.footer-center a:visited {
+    display: block;
+    color: grey;
+    font-size: 2rem;
+    
+}
+
+.footer-center a:hover {
+    color: purple;
+}
+
+.footer-center a{
+    text-decoration: none;/*to remove underline*/
+}
+
+.footer-center h3{
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*about*/
+
+.ab {
+    text-align: center;
+    
+}
+
+
+.ab h3{
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+
+.start {
+    background-color: beige;
+}
+
+.start1 {
+    background-color: beige;
+}
+
+.start2 {
+    background-color: beige;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*login*/
+
+.lr{
+    padding: 30px 0;
+    background-color: beige;
+
+}
+.container{
+    display: grid;
+}
+.form-container{
+    background: violet;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    
+    overflow: hidden;
+
+}
+
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: purple;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+
+
+}
+
+.form-btn{
+    display: inline-block;
+
+}
+
+.form-container form{
+    min-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 140px;
+    transition: transform 1s;/*takes tome for switching bet login and register*/
+
+
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid black;
+
+}
+
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus{
+    outline: none;
+
+
+}
+
+
+#lform{
+    left: -300px;
+}
+
+#rform{
+    left: 0;
+}
+
+form a{
+    font-size: 14px;
+
+}
+
+#indicator{
+    width: 100px;
+    border: none;
+    background: purple;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(113px); /*a line under register word*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*cart*/
+
+.cart-page{
+    margin: 80px auto;
+    right: 100px;
+    left: 100px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: purple;
+    background: beige;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;/*size of quantity box*/
+    padding: 5px;
+}
+
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+
+}
+
+.amount{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.amount table{
+    border-top: 3px solid black;
+    width: 100%;
+    max-width: 900px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
